@@ -4,48 +4,57 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Web Developer Portfolio</title>
-  <link rel="stylesheet" href="index.css"/>
+  <!-- Tailwind Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Custom CSS for anything Tailwind can't cover -->
+  <link rel="stylesheet" href="styles.css"/>
 </head>
-<body>
-  <header>
-    <div class="left-nav">
-        <div class="logo"></div>
-        <nav>
-          <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="#">SERVICES</a></li>
-            <li><a href="#">BLOG</a></li>
-            <li><a href="#">MORE</a></li>
-          </ul>
-        </nav>
-      </div>
-    <a href="#" class="contact-btn">CONTACT</a>
+<body class="bg-[#0a0a0a] text-white font-sans">
+
+  <!-- Header -->
+  <header class="flex items-center justify-between px-6 md:px-16 py-5 bg-[#0a0a0a]">
+    <div class="flex items-center space-x-10">
+      <div class="w-10 h-10 bg-[url('https://img.icons8.com/ios-filled/50/00e1c2/github.png')] bg-center bg-contain"></div>
+      <nav>
+        <ul class="flex space-x-8 text-gray-400">
+          <li><a href="index.html" class="hover:text-[#00e1c2] font-medium">HOME</a></li>
+          <li><a href="about.html" class="hover:text-[#00e1c2] font-medium">ABOUT</a></li>
+          <li><a href="#" class="hover:text-[#00e1c2] font-medium">SERVICES</a></li>
+          <li><a href="#" class="hover:text-[#00e1c2] font-medium">BLOG</a></li>
+          <li><a href="#" class="hover:text-[#00e1c2] font-medium">MORE</a></li>
+        </ul>
+      </nav>
+    </div>
+    <a href="#" class="px-4 py-2 bg-[#00e1c2] text-black font-bold rounded">CONTACT</a>
   </header>
 
-  <section class="main">
-    <div class="profile-pic">
-      <img src="lena.jpg" alt="Profile Photo">
-    </div>
-    <div class="intro">
-      <h4>CODEWITHLENA</h4>
-      <h1>I'm a Web <span>Developer</span></h1>
-      <p>
+  <!-- Main Section -->
+  <section class="flex flex-col-reverse md:flex-row items-center justify-center gap-8 p-6 md:p-16">
+    <div class="intro max-w-lg text-center md:text-left">
+      <h4 class="text-sm text-[#00e1c2] mb-2">MELVIN KWAKU YAWLUI</h4>
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">I'm a Web <span class="text-[#00e1c2]">Developer</span></h1>
+      <p class="text-gray-400 leading-relaxed mb-6">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque illum nam nobis, minima laudantium fugit sequi nostrum quod impedit, beatae necessitatibus praesentium optio labore nemo!
       </p>
-      <a href="#" class="download-btn">DOWNLOAD CV</a>
+      <a href="#" class="inline-block px-6 py-3 border border-[#00e1c2] text-[#00e1c2] font-bold rounded transition hover:bg-[#00e1c2] hover:text-black">
+        DOWNLOAD CV
+      </a>
+    </div>
+    <div class="profile-pic">
+      <img src="lena.jpg" alt="Profile Photo" class="w-64 md:w-80 rounded-lg shadow-lg"/>
     </div>
   </section>
 
-  <footer>
-        <div class="footer-content">
-        <p>&copy; 2023 Web Developer Portfolio. All rights reserved.</p>
-        <div class="social-icons">
-            <a href="#"><img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn"></a>
-            <a href="#"><img src="https://img.icons8.com/color/48/000000/github.png" alt="GitHub"></a>
-            <a href="#"><img src="https://img.icons8.com/color/48/000000/twitter.png" alt="Twitter"></a>
-        </div>
-        </div>
+  <!-- Footer -->
+  <footer class="bg-[#0a0a0a] py-6">
+    <div class="container mx-auto text-center">
+      <p class="text-gray-500 mb-4">&copy; 2023 Web Developer Portfolio. All rights reserved.</p>
+      <div class="flex justify-center space-x-6">
+        <a href="https://linkedin.com/in/melvin-kwaku-yawlui"><img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn" class="w-8 h-8"/></a>
+        <a href="https://github.com/melvin105"><img src="https://img.icons8.com/color/48/000000/github.png" alt="GitHub" class="w-8 h-8"/></a>
+        <a href="https://x.com/Melvin_Kwaku"><img src="https://img.icons8.com/color/48/000000/twitter.png" alt="Twitter" class="w-8 h-8"/></a>
+      </div>
+    </div>
   </footer>
 
 </body>

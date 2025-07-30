@@ -1,0 +1,21 @@
+/* Any custom tweaks not covered by Tailwind utilities */
+
+/* For scrollbar styling (if you want) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #00e1c2;
+  border-radius: 4px;
+}
+
+/* If you need bespoke media queries */
+@media (max-width: 640px) {
+  /* e.g., tweak padding on very small screens */
+  .intro, .about-content {
+    padding: 0 1rem;
+  }
+}

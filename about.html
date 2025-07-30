@@ -3,144 +3,159 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Web Developer Portfolio</title>
-  <link rel="stylesheet" href="index.css"/>
+  <title>About Me – Web Developer Portfolio</title>
+  <!-- Tailwind Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
-<body>
-  <header>
-    <div class="left-nav">
-        <div class="logo"></div>
-        <nav>
-          <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="#">SERVICES</a></li>
-            <li><a href="#">BLOG</a></li>
-            <li><a href="#">MORE</a></li>
-          </ul>
-        </nav>
-      </div>
-    <a href="#" class="contact-btn">CONTACT</a>
+<body class="bg-[#121212] text-white font-sans"> 
+
+  <!-- Header (same as index) -->
+  <header class="flex items-center justify-between px-6 md:px-16 py-5 bg-[#121212]">
+    <div class="flex items-center space-x-10">
+      <div class="w-10 h-10 bg-[url('https://img.icons8.com/ios-filled/50/00e1c2/github.png')] bg-center bg-contain"></div>
+      <nav>
+        <ul class="flex space-x-8 text-gray-400">
+          <li><a href="index.html" class="hover:text-[#00e1c2] font-medium">HOME</a></li>
+          <li><a href="about.html" class="hover:text-[#00e1c2] font-medium">ABOUT</a></li>
+          <li><a href="#" class="hover:text-[#00e1c2] font-medium">SERVICES</a></li>
+          <li><a href="#" class="hover:text-[#00e1c2] font-medium">BLOG</a></li>
+          <li><a href="#" class="hover:text-[#00e1c2] font-medium">MORE</a></li>
+        </ul>
+      </nav>
+    </div>
+    <a href="#" class="px-4 py-2 bg-[#00e1c2] text-black font-bold rounded">CONTACT</a>
   </header>
 
-<section class="about" id="about">
-  <div class="about-wrapper">
-    <div class="about-img">
-      <img src="lena.jpg" alt="Profile Image">
+  <!-- About Section -->
+  <section id="about" class="py-16 px-6 md:px-16">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-start gap-10">
+      <div class="about-img flex-shrink-0">
+        <img src="lena.jpg" alt="Profile Image" class="w-64 md:w-80 rounded-xl shadow-[0_0_20px_rgba(0,225,194,0.2)]"/>
+      </div>
+      <div class="about-content flex-1">
+        <h2 class="text-3xl md:text-4xl font-bold text-[#00e1c2] mb-6">About Me</h2>
+        <p class="objective text-gray-300 leading-relaxed mb-8">
+          I'm a passionate and detail-driven web developer and aspiring data analyst with strong skills in Excel, SQL, and database management. I thrive on using technology to streamline processes, build responsive and efficient web applications, and uncover meaningful insights through data. With a commitment to continuous learning and growth, I’m always eager to take on new challenges and contribute to impactful, results-oriented projects.
+        </p>
+
+        <!-- Technical Skills -->
+        <h3 class="skills-heading text-2xl md:text-3xl font-bold text-[#00e1c2] border-l-4 border-[#00e1c2] pl-4 mb-6">Technical Skills</h3>
+
+        <!-- Programming -->
+        <div class="skill-category">
+          <h4 class="sub-skill-heading text-xl font-semibold text-gray-300 mb-4">Programming</h4>
+          <div class="skills-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
+            <!-- Python -->
+            <div class="skill-item p-6 bg-[#1a1a1a] rounded-lg text-center transition hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(0,225,194,0.2)]">
+              <img src="https://img.icons8.com/color/48/000000/python.png" alt="Python" class="mx-auto mb-2"/>
+              <span class="block text-lg text-gray-300">Python</span>
+            </div>
+            <!-- C++ -->
+            <div class="skill-item p-6 bg-[#1a1a1a] rounded-lg text-center hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(0,225,194,0.2)] transition">
+              <img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png" alt="C++" class="mx-auto mb-2"/>
+              <span class="block text-lg text-gray-300">C++</span>
+            </div>
+            <!-- Git -->
+            <div class="skill-item p-6 bg-[#1a1a1a] rounded-lg text-center hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(0,225,194,0.2)] transition">
+              <img src="https://img.icons8.com/color/48/000000/git.png" alt="Git" class="mx-auto mb-2"/>
+              <span class="block text-lg text-gray-300">Git</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Web Development -->
+        <div class="skill-category mt-8">
+          <h4 class="sub-skill-heading text-xl font-semibold text-gray-300 mb-4">Web Development</h4>
+          <div class="skills-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            <!-- HTML -->
+            <div class="skill-item p-6 bg-[#1a1a1a] rounded-lg text-center hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(0,225,194,0.2)] transition">
+              <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML" class="mx-auto mb-2"/>
+              <span class="block text-lg text-gray-300">HTML</span>
+            </div>
+            <!-- CSS -->
+            <div class="skill-item p-6 bg-[#1a1a1a] rounded-lg text-center hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(0,225,194,0.2)] transition">
+              <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS" class="mx-auto mb-2"/>
+              <span class="block text-lg text-gray-300">CSS</span>
+            </div>
+            <!-- JavaScript -->
+            <div class="skill-item p-6 bg-[#1a1a1a] rounded-lg text-center hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(0,225,194,0.2)] transition">
+              <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript" class="mx-auto mb-2"/>
+              <span class="block text-lg text-gray-300">JavaScript</span>
+            </div>
+            <!-- PHP -->
+            <div class="skill-item p-6 bg-[#1a1a1a] rounded-lg text-center hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(0,225,194,0.2)] transition">
+              <img src="https://img.icons8.com/color/48/000000/php.png" alt="PHP" class="mx-auto mb-2"/>
+              <span class="block text-lg text-gray-300">PHP</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Data Analysis -->
+        <div class="skill-category mt-8">
+          <h4 class="sub-skill-heading text-xl font-semibold text-gray-300 mb-4">Data Analysis</h4>
+          <div class="skills-grid grid grid-cols-2 md:grid-cols-4 gap-6">
+            <!-- Excel -->
+            <div class="skill-item p-6 bg-[#1a1a1a] rounded-lg text-center hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(0,225,194,0.2)] transition">
+              <img src="https://img.icons8.com/color/48/000000/ms-excel.png" alt="Excel" class="mx-auto mb-2"/>
+              <span class="block text-lg text-gray-300">Excel</span>
+            </div>
+            <!-- SQL -->
+            <div class="skill-item p-6 bg-[#1a1a1a] rounded-lg text-center hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(0,225,194,0.2)] transition">
+              <img src="https://img.icons8.com/color/48/000000/sql.png" alt="SQL" class="mx-auto mb-2"/>
+              <span class="block text-lg text-gray-300">SQL</span>
+            </div>
+            <!-- MS Access -->
+            <div class="skill-item p-6 bg-[#1a1a1a] rounded-lg text-center hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(0,225,194,0.2)] transition">
+              <img src="https://img.icons8.com/color/48/000000/ms-access.png" alt="MS Access" class="mx-auto mb-2"/>
+              <span class="block text-lg text-gray-300">MS Access</span>
+            </div>
+            <!-- Power BI -->
+            <div class="skill-item p-6 bg-[#1a1a1a] rounded-lg text-center hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(0,225,194,0.2)] transition">
+              <img src="https://img.icons8.com/color/48/000000/power-bi.png" alt="Power BI" class="mx-auto mb-2"/>
+              <span class="block text-lg text-gray-300">Power BI</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <h3 class="skills-heading text-2xl md:text-3xl font-bold text-[#00e1c2] border-l-4 border-[#00e1c2] pl-4 mb-6 mt-12">Soft Skills</h3>
+        <div class="skills-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <!-- Problem-Solving -->
+          <div class="skill-item p-6 bg-[#1a1a1a] rounded-lg text-center hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(0,225,194,0.2)] transition">
+            <img src="https://img.icons8.com/color/48/000000/idea.png" alt="Problem-Solving" class="mx-auto mb-2"/>
+            <span class="block text-lg text-gray-300">Problem-Solving</span>
+          </div>
+          <!-- Critical Thinking -->
+          <div class="skill-item p-6 bg-[#1a1a1a] rounded-lg text-center hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(0,225,194,0.2)] transition">
+            <img src="https://img.icons8.com/color/48/000000/brain.png" alt="Critical Thinking" class="mx-auto mb-2"/>
+            <span class="block text-lg text-gray-300">Critical Thinking</span>
+          </div>
+          <!-- Team Collaboration -->
+          <div class="skill-item p-6 bg-[#1a1a1a] rounded-lg text-center hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(0,225,194,0.2)] transition">
+            <img src="https://img.icons8.com/fluency/48/000000/conference-call.png" alt="Team Collaboration" class="mx-auto mb-2"/>
+            <span class="block text-lg text-gray-300">Team Collaboration</span>
+          </div>
+        </div>
+
+        <a href="#" class="download-btn inline-block mt-8 px-6 py-3 border border-[#00e1c2] text-[#00e1c2] font-bold rounded transition hover:bg-[#00e1c2] hover:text-black">
+          Download Resume
+        </a>
+      </div>
     </div>
-    <div class="about-content">
-      <h2>About Me</h2>
-      <p class="objective">
-I'm a passionate and detail-driven web developer and aspiring data analyst with strong skills in Excel, SQL, and database management. I thrive on using technology to streamline processes, build responsive and efficient web applications, and uncover meaningful insights through data. With a commitment to continuous learning and growth, I’m always eager to take on new challenges and contribute to impactful, results-oriented projects.
+  </section>
 
-      </p>
-
-      <!-- Technical Skills -->
-      <h3 class="skills-heading">Technical Skills</h3>
-
-      <!-- Programming -->
-      <div class="skill-category">
-        <h4 class="sub-skill-heading">Programming</h4>
-        <div class="skills-grid">
-          <div class="skill-item">
-            <img src="https://img.icons8.com/color/48/000000/python.png" alt="Python">
-            <span>Python</span>
-          </div>
-          <div class="skill-item">
-            <img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png" alt="C++">
-            <span>C++</span>
-          </div>
-          <div class="skill-item">
-            <img src="https://img.icons8.com/color/48/000000/git.png" alt="Git">
-            <span>Git</span>
-          </div>
-        </div>
+ <!-- Footer -->
+  <footer class="bg-[#0a0a0a] py-6">
+    <div class="container mx-auto text-center">
+      <p class="text-gray-500 mb-4">&copy; 2023 Web Developer Portfolio. All rights reserved.</p>
+      <div class="flex justify-center space-x-6">
+        <a href="www.linkedin.com/in/melvin-kwaku-yawlui"><img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn" class="w-8 h-8"/></a>
+        <a href="https://github.com/melvin105"><img src="https://img.icons8.com/color/48/000000/github.png" alt="GitHub" class="w-8 h-8"/></a>
+        <a href="https://x.com/Melvin_Kwaku"><img src="https://img.icons8.com/color/48/000000/twitter.png" alt="Twitter" class="w-8 h-8"/></a>
       </div>
-
-      <!-- Web Development -->
-      <div class="skill-category">
-        <h4 class="sub-skill-heading">Web Development</h4>
-        <div class="skills-grid">
-          <div class="skill-item">
-            <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML">
-            <span>HTML</span>
-          </div>
-          <div class="skill-item">
-            <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS">
-            <span>CSS</span>
-          </div>
-          <div class="skill-item">
-            <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript">
-            <span>JavaScript</span>
-          </div>
-          <div class="skill-item">
-            <img src="https://img.icons8.com/color/48/000000/php.png" alt="PHP">
-            <span>PHP</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Data Analysis -->
-      <div class="skill-category">
-        <h4 class="sub-skill-heading">Data Analysis</h4>
-        <div class="skills-grid">
-          <div class="skill-item">
-            <img src="https://img.icons8.com/color/48/000000/ms-excel.png" alt="Excel">
-            <span>Excel</span>
-          </div>
-          <div class="skill-item">
-            <img src="https://img.icons8.com/color/48/000000/sql.png" alt="SQL">
-            <span>SQL</span>
-          </div>
-          <div class="skill-item">
-            <img src="https://img.icons8.com/color/48/000000/ms-access.png" alt="MS Access">
-            <span>MS Access</span>
-          </div>
-          <div class="skill-item">
-            <img src="https://img.icons8.com/color/48/000000/power-bi.png" alt="Power BI">
-            <span>Power BI</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Soft Skills -->
-      <h3 class="skills-heading">Soft Skills</h3>
-      <div class="skill-category">
-        <div class="skills-grid">
-          <div class="skill-item">
-            <img src="https://img.icons8.com/fluency/48/000000/idea-sharing.png" alt="Problem-Solving">
-            <span>Problem-Solving</span>
-          </div>
-          <div class="skill-item">
-            <img src="https://img.icons8.com/fluency/48/000000/brain.png" alt="Critical Thinking">
-            <span>Critical Thinking</span>
-          </div>
-          <div class="skill-item">
-            <img src="https://img.icons8.com/fluency/48/000000/conference-call.png" alt="Team Collaboration">
-            <span>Team Collaboration</span>
-          </div>
-        </div>
-      </div>
-
-      <a href="#" class="download-btn">Download Resume</a>
     </div>
-  </div>
-</section>
-
-
-    <footer>
-        <div class="footer-content">
-        <p>&copy; 2023 Web Developer Portfolio. All rights reserved.</p>
-        <div class="social-icons">
-            <a href="#"><img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn"></a>
-            <a href="#"><img src="https://img.icons8.com/color/48/000000/github.png" alt="GitHub"></a>
-            <a href="#"><img src="https://img.icons8.com/color/48/000000/twitter.png" alt="Twitter"></a>
-        </div>
-        </div>
-    </footer>
-
+  </footer>
 
 </body>
 </html>
-
-
