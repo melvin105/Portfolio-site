@@ -1,11 +1,11 @@
 export default function Footer() {
   return (
-    <footer className="bg-[#0a0a0a] py-8 border-t border-gray-800">
-      <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-6">
+    <footer className="bg-[#0a0a0a] py-6 sm:py-8 border-t border-gray-800">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 mb-6">
           {/* About Section */}
           <div className="text-center md:text-left">
-            <h3 className="text-lg font-bold text-[#00e1c2] mb-3">Melvin Kwaku Yawlui</h3>
+            <h3 className="text-base sm:text-lg font-bold text-[#00e1c2] mb-3">Melvin Kwaku Yawlui</h3>
             <p className="text-gray-400 text-sm leading-relaxed">
               Passionate web developer and data analyst creating innovative digital solutions. 
               Let's build something amazing together.
@@ -14,7 +14,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div className="text-center">
-            <h3 className="text-lg font-bold text-[#00e1c2] mb-3">Quick Links</h3>
+            <h3 className="text-base sm:text-lg font-bold text-[#00e1c2] mb-3">Quick Links</h3>
             <ul className="space-y-2">
               <li><a href="/" className="text-gray-400 hover:text-[#00e1c2] transition-colors text-sm">Home</a></li>
               <li><a href="/about" className="text-gray-400 hover:text-[#00e1c2] transition-colors text-sm">About</a></li>
@@ -25,7 +25,7 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div className="text-center md:text-right">
-            <h3 className="text-lg font-bold text-[#00e1c2] mb-3">Get In Touch</h3>
+            <h3 className="text-base sm:text-lg font-bold text-[#00e1c2] mb-3">Get In Touch</h3>
             <p className="text-gray-400 text-sm mb-2">Ghana, West Africa</p>
             <p className="text-gray-400 text-sm">Available for freelance work</p>
           </div>

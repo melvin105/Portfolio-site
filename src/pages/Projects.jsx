@@ -42,16 +42,16 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="py-16 px-6 md:px-16 bg-[#121212] text-white">
+    <section id="projects" className="py-12 sm:py-16 px-4 sm:px-6 md:px-16 bg-[#121212] text-white">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-[#00e1c2] mb-4 text-center">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#00e1c2] mb-4 text-center">
           My Projects
         </h2>
-        <p className="text-gray-400 text-center mb-12 max-w-2xl mx-auto">
+        <p className="text-gray-400 text-center mb-8 sm:mb-12 max-w-2xl mx-auto text-sm sm:text-base px-4">
           Here are some of the projects I've worked on. Each project represents a learning journey and showcases different aspects of web development and data analysis.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
           {projects.map((project) => (
             <div key={project.id} className="project-card bg-[#1a1a1a] rounded-lg overflow-hidden shadow-lg hover:shadow-[0_0_20px_rgba(0,225,194,0.2)] transition-all duration-300 hover:-translate-y-2">
               <div className="project-image">

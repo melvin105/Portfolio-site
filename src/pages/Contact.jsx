@@ -24,19 +24,19 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-16 px-6 md:px-16 bg-[#121212] text-white">
+    <section id="contact" className="py-12 sm:py-16 px-4 sm:px-6 md:px-16 bg-[#121212] text-white">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-[#00e1c2] mb-4 text-center">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#00e1c2] mb-4 text-center">
           Get In Touch
         </h2>
-        <p className="text-gray-400 text-center mb-12 max-w-2xl mx-auto">
+        <p className="text-gray-400 text-center mb-8 sm:mb-12 max-w-2xl mx-auto text-sm sm:text-base px-4">
           I'm always interested in new opportunities and exciting projects. Whether you have a question or just want to say hi, I'll try my best to get back to you!
         </p>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12">
           {/* Contact Information */}
           <div className="contact-info">
-            <h3 className="text-2xl font-bold text-[#00e1c2] mb-6">Let's Connect</h3>
+            <h3 className="text-xl sm:text-2xl font-bold text-[#00e1c2] mb-4 sm:mb-6 text-center lg:text-left">Let's Connect</h3>
             <p className="text-gray-300 mb-8 leading-relaxed">
               I'm passionate about creating innovative solutions and always excited to collaborate on new projects. 
               Feel free to reach out if you'd like to work together or just have a chat about technology!
@@ -114,7 +114,7 @@ export default function Contact() {
 
           {/* Contact Form */}
           <div className="contact-form">
-            <h3 className="text-2xl font-bold text-[#00e1c2] mb-6">Send Me a Message</h3>
+            <h3 className="text-xl sm:text-2xl font-bold text-[#00e1c2] mb-4 sm:mb-6 text-center lg:text-left">Send Me a Message</h3>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="form-group">
                 <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">

@@ -4,21 +4,21 @@ import profilePic from "../assets/lena.jpg"; // keep lena.jpg inside src/assets
 
 export default function About() {
   return (
-    <section id="about" className="py-16 px-6 md:px-16 bg-[#121212] text-white">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start gap-10">
+    <section id="about" className="py-12 sm:py-16 px-4 sm:px-6 md:px-16 bg-[#121212] text-white">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start gap-6 sm:gap-8 md:gap-10">
         
         {/* Profile Image */}
-        <div className="about-img flex-shrink-0">
+        <div className="about-img flex-shrink-0 mx-auto md:mx-0">
           <img
             src={profilePic}
             alt="Profile Image"
-            className="w-64 md:w-80 rounded-xl shadow-[0_0_20px_rgba(0,225,194,0.2)]"
+            className="w-48 sm:w-64 md:w-80 rounded-xl shadow-[0_0_20px_rgba(0,225,194,0.2)]"
           />
         </div>
 
         {/* About Content */}
         <div className="about-content flex-1">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#00e1c2] mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#00e1c2] mb-4 sm:mb-6 text-center md:text-left">
             About Me
           </h2>
           <p className="objective text-gray-300 leading-relaxed mb-8">
