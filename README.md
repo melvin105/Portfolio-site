@@ -2,6 +2,17 @@
 
 A modern, responsive portfolio website built with React, Vite, and Tailwind CSS. This portfolio showcases my skills, projects, and experience as a web developer and data analyst.
 
+## 🌐 Live Demo
+
+**👉 [View Live Portfolio](https://portfolio-site-pi-sable.vercel.app)**
+
+[![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://portfolio-site-pi-sable.vercel.app)
+[![React](https://img.shields.io/badge/React-19.1.1-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-4.1.13-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+
+### 📸 Preview
+*Visit the live demo to see the full interactive experience with smooth animations and responsive design.*
+
 ## 🚀 Features
 
 - **Responsive Design**: Fully responsive layout that works on all devices
@@ -98,6 +109,7 @@ Update the following files to customize content:
 
 ## 📦 Build and Deploy
 
+### Local Build
 1. Build the project:
 ```bash
 npm run build
@@ -105,7 +117,21 @@ npm run build
 
 2. The built files will be in the `dist/` directory
 
-3. Deploy the `dist/` folder to your preferred hosting service (Netlify, Vercel, GitHub Pages, etc.)
+### Deployment Options
+
+#### Vercel (Recommended)
+- Connect your GitHub repository to Vercel
+- Automatic deployments on every push
+- Global CDN for fast loading
+- Custom domains support
+
+#### Other Options
+- **Netlify**: Drag & drop or Git integration
+- **GitHub Pages**: For static hosting
+- **Firebase Hosting**: Google's hosting platform
+
+### Current Deployment
+This portfolio is currently deployed on **Vercel** with automatic deployments from the master branch.
 
 ## 🤝 Contributing
 
