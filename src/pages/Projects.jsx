@@ -42,18 +42,18 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="py-12 sm:py-16 px-4 sm:px-6 md:px-16 bg-[#121212] text-white">
+    <section id="projects" className="py-12 sm:py-16 px-4 sm:px-6 md:px-16 text-gray-900 dark:text-white">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#00e1c2] mb-4 text-center">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-600 dark:text-[#00e1c2] mb-4 text-center">
           My Projects
         </h2>
-        <p className="text-gray-400 text-center mb-8 sm:mb-12 max-w-2xl mx-auto text-sm sm:text-base px-4">
+        <p className="text-gray-600 dark:text-gray-400 text-center mb-8 sm:mb-12 max-w-2xl mx-auto text-sm sm:text-base px-4">
           Here are some of the projects I've worked on. Each project represents a learning journey and showcases different aspects of web development and data analysis.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
           {projects.map((project) => (
-            <div key={project.id} className="project-card bg-[#1a1a1a] rounded-lg overflow-hidden shadow-lg hover:shadow-[0_0_20px_rgba(0,225,194,0.2)] transition-all duration-300 hover:-translate-y-2">
+            <div key={project.id} className="project-card bg-white dark:bg-[#1a1a1a] rounded-lg overflow-hidden shadow-lg hover:shadow-xl hover:shadow-emerald-500/20 dark:hover:shadow-[0_0_20px_rgba(0,225,194,0.2)] transition-all duration-300 hover:-translate-y-2 border border-gray-200 dark:border-gray-700">
               <div className="project-image">
                 <img 
                   src={project.image} 
@@ -62,20 +62,20 @@ export default function Projects() {
                 />
               </div>
               <div className="project-content p-6">
-                <h3 className="text-xl font-bold text-[#00e1c2] mb-3">
+                <h3 className="text-xl font-bold text-emerald-600 dark:text-[#00e1c2] mb-3">
                   {project.title}
                 </h3>
-                <p className="text-gray-300 mb-4 leading-relaxed">
+                <p className="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
                   {project.description}
                 </p>
                 
                 <div className="technologies mb-4">
-                  <h4 className="text-sm font-semibold text-gray-400 mb-2">Technologies Used:</h4>
+                  <h4 className="text-sm font-semibold text-gray-600 dark:text-gray-400 mb-2">Technologies Used:</h4>
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech, index) => (
                       <span 
                         key={index}
-                        className="px-3 py-1 bg-[#00e1c2] text-black text-xs font-medium rounded-full"
+                        className="px-3 py-1 bg-gradient-to-r from-emerald-500 to-teal-500 dark:bg-[#00e1c2] text-white dark:text-black text-xs font-medium rounded-full"
                       >
                         {tech}
                       </span>
@@ -88,7 +88,7 @@ export default function Projects() {
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-4 py-2 border border-[#00e1c2] text-[#00e1c2] rounded hover:bg-[#00e1c2] hover:text-black transition-colors"
+                    className="flex items-center gap-2 px-4 py-2 border border-emerald-600 dark:border-[#00e1c2] text-emerald-600 dark:text-[#00e1c2] rounded hover:bg-emerald-600 dark:hover:bg-[#00e1c2] hover:text-white dark:hover:text-black transition-colors"
                   >
                     <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
@@ -99,7 +99,7 @@ export default function Projects() {
                     href={project.live}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-4 py-2 bg-[#00e1c2] text-black rounded hover:bg-[#00d4b3] transition-colors"
+                    className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-emerald-500 to-teal-500 dark:bg-[#00e1c2] text-white dark:text-black rounded hover:from-emerald-600 hover:to-teal-600 dark:hover:bg-[#00d4b3] transition-colors"
                   >
                     <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
@@ -113,12 +113,12 @@ export default function Projects() {
         </div>
 
         <div className="text-center mt-12">
-          <p className="text-gray-400 mb-4">Want to see more of my work?</p>
+          <p className="text-gray-600 dark:text-gray-400 mb-4">Want to see more of my work?</p>
           <a 
             href="https://github.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block px-6 py-3 border border-[#00e1c2] text-[#00e1c2] font-bold rounded transition hover:bg-[#00e1c2] hover:text-black"
+            className="inline-block px-6 py-3 border border-emerald-600 dark:border-[#00e1c2] text-emerald-600 dark:text-[#00e1c2] font-bold rounded transition hover:bg-emerald-600 dark:hover:bg-[#00e1c2] hover:text-white dark:hover:text-black"
           >
             View All Projects on GitHub
           </a>

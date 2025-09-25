@@ -5,20 +5,20 @@ import profilePic from "../assets/lena.jpg"; // keep lena.jpg inside src/assets
 export default function About() {
   return (
     <section id="about" className="py-12 sm:py-16 px-4 sm:px-6 md:px-16 bg-[#121212] text-white">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start gap-6 sm:gap-8 md:gap-10">
+      <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-start gap-8 sm:gap-10 lg:gap-12">
         
         {/* Profile Image */}
-        <div className="about-img flex-shrink-0 mx-auto md:mx-0">
+        <div className="about-img flex-shrink-0 mx-auto lg:mx-0 w-full lg:w-auto">
           <img
             src={profilePic}
             alt="Profile Image"
-            className="w-48 sm:w-64 md:w-80 rounded-xl shadow-[0_0_20px_rgba(0,225,194,0.2)]"
+            className="w-48 sm:w-56 md:w-64 lg:w-80 mx-auto lg:mx-0 rounded-xl shadow-[0_0_20px_rgba(0,225,194,0.2)]"
           />
         </div>
 
         {/* About Content */}
         <div className="about-content flex-1">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#00e1c2] mb-4 sm:mb-6 text-center md:text-left">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#00e1c2] mb-4 sm:mb-6 text-center lg:text-left">
             About Me
           </h2>
           <p className="objective text-gray-300 leading-relaxed mb-8">
@@ -38,10 +38,10 @@ export default function About() {
 
           {/* Programming */}
           <div className="skill-category mb-8">
-            <h4 className="text-xl font-semibold text-gray-300 mb-4">
+            <h4 className="text-lg sm:text-xl font-semibold text-gray-300 mb-4">
               Programming
             </h4>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-6">
               <SkillItem
                 img="https://img.icons8.com/color/48/000000/python.png"
                 name="Python"
@@ -59,10 +59,10 @@ export default function About() {
 
           {/* Web Development */}
           <div className="skill-category mb-8">
-            <h4 className="text-xl font-semibold text-gray-300 mb-4">
+            <h4 className="text-lg sm:text-xl font-semibold text-gray-300 mb-4">
               Web Development
             </h4>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 sm:gap-6">
               <SkillItem
                 img="https://img.icons8.com/color/48/000000/html-5.png"
                 name="HTML"
@@ -92,10 +92,10 @@ export default function About() {
 
           {/* Data Analysis */}
           <div className="skill-category mb-8">
-            <h4 className="text-xl font-semibold text-gray-300 mb-4">
+            <h4 className="text-lg sm:text-xl font-semibold text-gray-300 mb-4">
               Data Analysis
             </h4>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6">
               <SkillItem
                 img="https://img.icons8.com/color/48/000000/ms-excel.png"
                 name="Excel"
@@ -119,7 +119,7 @@ export default function About() {
           <h3 className="text-2xl md:text-3xl font-bold text-[#00e1c2] border-l-4 border-[#00e1c2] pl-4 mb-6 mt-12">
             Soft Skills
           </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
             <SkillItem
               img="https://img.icons8.com/color/48/000000/idea.png"
               name="Problem-Solving"
@@ -150,9 +150,9 @@ export default function About() {
 /* Skill Item component */
 function SkillItem({ img, name }) {
   return (
-    <div className="skill-item p-6 bg-[#1a1a1a] rounded-lg text-center transition hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(0,225,194,0.2)]">
-      <img src={img} alt={name} className="mx-auto mb-2" />
-      <span className="block text-lg text-gray-300">{name}</span>
+    <div className="skill-item p-4 sm:p-6 bg-[#1a1a1a] rounded-lg text-center transition hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(0,225,194,0.2)] border border-gray-700 hover:border-[#00e1c2]">
+      <img src={img} alt={name} className="mx-auto mb-2 w-8 h-8 sm:w-12 sm:h-12" />
+      <span className="block text-sm sm:text-lg text-gray-300 font-medium">{name}</span>
     </div>
   );
 }
